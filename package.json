@@ -49,7 +49,10 @@
     "clean": "rimraf dist",
     "lint": "eslint \"src/**/*.js\"",
     "start": "NODE_ENV=development webpack-dev-server --host=0.0.0.0 --port=9020 --inline --hot",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "start-server": "pm2 start server.js --name gallery-blog -- --prod --port 8080 --host '0.0.0.0'",
+    "restart-server": "pm2 restart server.js --name gallery-blog -- --prod --port 8080 --host '0.0.0.0'",
+    "stop-server": "pm2 stop server.js --name gallery-blog"
   },
   "license": "MIT"
 }
