@@ -29,7 +29,7 @@ export const store = createStore(
 )
 
 export const history = useRouterHistory(createHistory)({
-  basename: (process.env.NODE_ENV && process.env.NODE_ENV === 'production') ? '/gallery-app-react/' : '/'
+  basename: '/'
 })
 
 export const mapStateToProps = state => state
