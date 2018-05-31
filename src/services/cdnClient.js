@@ -1,4 +1,4 @@
-let DbCDN = require('DbCDN/dist/index').default
+let DbCDN = require('db-cdn').default
 
 let client
 let authorized
