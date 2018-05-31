@@ -6,7 +6,7 @@ module.exports = {
   context: path.join(__dirname, 'src'),
   entry: './main.js',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: '[name].bundle.js',
     publicPath: '/'
   },
@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         test: /\.js?$/,
-        exclude: /(node_modules|bower_components|dist)/,
+        exclude: /(node_modules|bower_components|dist|public)/,
         loader: 'babel'
       },
       {

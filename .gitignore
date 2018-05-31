@@ -38,9 +38,13 @@ jspm_packages
 
 # publish
 dist
+public
 
 .idea
 
 config.js
 package-lock.json
+.firebaserc
+firebase.json
+yarn.lock
 

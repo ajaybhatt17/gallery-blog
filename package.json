@@ -42,17 +42,19 @@
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "firebase-tools": "^3.18.5"
   },
   "scripts": {
     "build": "npm run clean && NODE_ENV=production webpack -p",
-    "clean": "rimraf dist",
+    "clean": "rimraf public",
     "lint": "eslint \"src/**/*.js\"",
     "start": "NODE_ENV=development webpack-dev-server --host=0.0.0.0 --port=9020 --inline --hot",
     "test": "npm run lint",
     "start-server": "pm2 start server.js --name gallery-blog -- --prod --port 8080 --host '0.0.0.0'",
     "restart-server": "pm2 restart server.js --name gallery-blog -- --prod --port 8080 --host '0.0.0.0'",
-    "stop-server": "pm2 stop server.js --name gallery-blog"
+    "stop-server": "pm2 stop server.js --name gallery-blog",
+    "firebase-deploy": "npm run build && cp index.html public/ && firebase logout && firebase login && firebase init && firebase deploy"
   },
   "license": "MIT"
 }

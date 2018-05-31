@@ -13,7 +13,7 @@ or
 replace deliveryAccessToken with dropbox access token
 
 
-## Deploy
+## Deploy on Server
 
 `npm run build`
 or
@@ -23,3 +23,9 @@ or
 or
 `yarn run start-server`
 
+
+## Deploy on firebase
+
+`npm run firebase-deploy`
+or
+`yarn run firebase-deploy`
