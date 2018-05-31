@@ -20,7 +20,7 @@
     "redux-promise-middleware": "^3.3.2",
     "redux-thunk": "^2.1.0",
     "express": "^4.16.2",
-    "DbCDN": "git+https://1d5bf17582960bd0f502783653df58edde6937ca:x-oauth-basic@github.com/ajaybhatt17/DbCDN.git#master"
+    "db-cdn": "^0.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
